@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header-wrapper">
+            <block name="After_logo" template="Magento_Theme::custom.phtml" after="logo"/>
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+            <container name="Mage_footer_cont" htmlTag="div">
+                <block name="Mage_footer" template="Magento_Theme::index.phtml" after="-">
+                    <block name="footer_alias_test" as="alias_test" template="Magento_Theme::custom_f.phtml"/>
+                    <block name="get_block_footer" template="Magento_Theme::custom.phtml"/>
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
