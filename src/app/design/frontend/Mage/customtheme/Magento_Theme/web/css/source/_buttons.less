@@ -1,7 +1,7 @@
 & when (@media-common = true) {
 
-    .general_btn{
-        a{
+    .general_btn {
+        a {
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
@@ -29,8 +29,8 @@
         }
     }
 
-    .exclusive_block_btn{
-        a{
+    .exclusive_block_btn {
+        a {
             font-weight: 700;
             color: #2d2b31;
             background-color: #fff;
@@ -38,8 +38,8 @@
         }
     }
 
-    .card_btn{
-        a{
+    .card_btn {
+        a {
             font-weight: 700;
             color: #2d2b31;
             background-color: @color-white;
@@ -47,6 +47,47 @@
         }
     }
 
+    .video_btn {
+        border: 1px solid #2d2b31;
+        width: 30%;
+        text-align: center;
+        margin: 20px auto;
+        padding: 15px;
+
+        a {
+            color: #2d2b31;
+        }
+
+        &:hover {
+            border-color: lightgrey;
+
+            a {
+                color: lightgrey;
+            }
+        }
+    }
+
+    .discount_btn{
+        width: 40%;
+        text-align: center;
+        margin: 30px auto 0;
+        a {
+            color: @color-white;
+            background-color: #22505f;
+        }
+    }
+
+    .our_journey_btn {
+        margin-top: 20px;
+        a {
+            background-color: @color-white;
+            border: none;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #2d2b31;
+
+        }
+    }
 
 }
 

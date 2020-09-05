@@ -10,6 +10,95 @@
                     </argument>
                 </arguments>
             </block>
+
+            <block name="underLine" class="Magento\Cms\Block\Block" after="headerBanner">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Underline_header_block
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="bestValues" class="Magento\Cms\Block\Block" after="underLine">
+            <arguments>
+                <argument name="block_id" xsi:type="string">
+                    Best_values
+                </argument>
+            </arguments>
+        </block>
+
+            <block name="shopCategories" class="Magento\Cms\Block\Block" after="bestValues">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Shop_categories
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="containerShip" class="Magento\Cms\Block\Block" after="shopCategories">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Container_ship
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="exclusiveBlock" class="Magento\Cms\Block\Block" after="containerShip">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Exclusive_block
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="shopCategoryCard" class="Magento\Cms\Block\Block" after="exclusiveBlock">
+            <arguments>
+                <argument name="block_id" xsi:type="string">
+                    Shop_categories_cards
+                </argument>
+            </arguments>
+        </block>
+
+            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Our_top_pics
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="videoContent" class="Magento\Cms\Block\Block" after="ourTopPick">
+            <arguments>
+                <argument name="block_id" xsi:type="string">
+                    Video_content
+                </argument>
+            </arguments>
+        </block>
+
+            <block name="discount" class="Magento\Cms\Block\Block" after="videoContent">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Discount
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="mention" class="Magento\Cms\Block\Block" after="discount">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Mention
+                    </argument>
+                </arguments>
+            </block>
+
+            <block name="ourJourney" class="Magento\Cms\Block\Block" after="mention">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Our_journey
+                    </argument>
+                </arguments>
+            </block>
+
         </referenceContainer>
     </body>
 </page>

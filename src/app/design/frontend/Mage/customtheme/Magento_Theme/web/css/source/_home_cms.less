@@ -73,7 +73,7 @@
         max-width: 70%;
         display: flex;
         justify-content: space-around;
-        margin: 0 auto;
+        margin: 30px auto;
 
         .best_value {
             display: flex;
@@ -159,43 +159,180 @@
                 font-weight: 400;
                 text-align: center;
             }
-            .exclusive_block_btn{
+
+            .exclusive_block_btn {
                 margin: 10px auto;
 
             }
         }
     }
 
-    .cards{
+    .cards {
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
-        .card{
+
+        .card {
             max-width: 49%;
-            &_title{
+
+            &_title {
                 text-align: center;
                 font-size: 35px;
                 margin: 20px 0;
             }
-            &_btn{
+
+            &_btn {
                 text-align: center;
                 margin: 40px auto;
             }
         }
     }
+
     .pager,
     .swatch-opt-2046,
     .swatch-opt-2009,
     .swatch-opt-2030,
     .swatch-opt-2003,
     .swatch-opt-2023,
-    .short{
+    .short {
         display: none;
     }
 
 
 
+    .discount {
+        background: url('@{baseDir}images/bg_banner_3.jpg');
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
 
+        &_content {
+            margin-top: 20px;
+            background-color: @color-white;
+            max-width: 350px;
+            height: 220px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        &_title {
+            font-size: 44px;
+            color: #9a1a28;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: 700;
+        }
+
+        &_sub_title {
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        &_text {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+
+            span {
+                font-weight: 800;
+            }
+        }
+
+    }
+
+    .video-content {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .video_description {
+        max-width: 595px;
+
+        .description_title {
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .description_text {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+        .mention {
+        max-width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid @color-gray-middle2;
+
+        &_title {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_png {
+                padding: 0 30px;
+                margin: 35px 0;
+                border-right: 1px solid @color-gray-middle2;
+
+                &:last-child {
+                    border: none;
+                }
+
+                img{
+                    max-width: 220px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+
+
+    .our_journey {
+        background: url('@{baseDir}images/bg_banner_4.jpg');
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+
+        &_title {
+            color: @color-white;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 22px;
+            //margin: 10px 0;
+            text-shadow: -2px -1px 5px #000;
+        }
+        .logo{
+            margin: 70px auto 10px;
+        }
+    }
 
 
 }
