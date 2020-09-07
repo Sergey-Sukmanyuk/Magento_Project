@@ -4,15 +4,209 @@
     <body>
         <referenceContainer name="header-wrapper">
             <block name="After_logo" template="Magento_Theme::custom.phtml" after="logo"/>
+            <block name="contacts" template="Magento_Theme::contacts.phtml" after="After_logo"/>
         </referenceContainer>
 
+
         <referenceContainer name="footer">
-            <container name="Mage_footer_cont" htmlTag="div">
-                <block name="Mage_footer" template="Magento_Theme::index.phtml" after="-">
-                    <block name="footer_alias_test" as="alias_test" template="Magento_Theme::custom_f.phtml"/>
-                    <block name="get_block_footer" template="Magento_Theme::custom.phtml"/>
+            <container name="footer_links_container_help" label="footer_links_container_help" htmlTag="div" htmlClass="links" before="cms_footer_links_container"/>
+            <container name="footer_links_container_about" label="footer_links_container_about" htmlTag="div" htmlClass="links" after="footer_links_container_help"/>
+            <container name="footer_links_container_information" label="footer_links_container_information" htmlTag="div" htmlClass="links" after="footer_links_container_about"/>
+            <container name="footer_links_container_popular" label="footer_links_container_popular" htmlTag="div" htmlClass="links" after="footer_links_container_information"/>
+        </referenceContainer>
+        <!--******************************************************************************************************-->
+
+        <referenceContainer name="footer_links_container_help">
+            <container name="footer_links_container_help_title" htmlTag="div" htmlClass="footer-title">
+                <block class="Magento\Framework\View\Element\Text" name="footer_help_title">
+                    <arguments>
+                        <argument name="text" xsi:type="string">HOW CAN WEE HELP</argument>
+                    </arguments>
                 </block>
             </container>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_help">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links</argument>
+                </arguments>
+            </block>
         </referenceContainer>
+
+        <referenceBlock name="footer_links_cms_help">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-center">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Help Center</argument>
+                    <argument name="path" xsi:type="string">help-center</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="order-tracking">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Order Tracking</argument>
+                    <argument name="path" xsi:type="string">order-tracking</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="free-returns">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Free Returns</argument>
+                    <argument name="path" xsi:type="string">free-returns</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="delivery-shipping">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Delivery Shipping</argument>
+                    <argument name="path" xsi:type="string">delivery-shipping</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="tax-inform">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Tax Inform</argument>
+                    <argument name="path" xsi:type="string">tax-inform</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="covid-19">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">COVID-19</argument>
+                    <argument name="path" xsi:type="string">covid-19</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <!--       **********************************************************************-->
+        <referenceContainer name="footer_links_container_about">
+            <container name="footer_links_container_about_title" htmlTag="div" htmlClass="footer-title">
+                <block class="Magento\Framework\View\Element\Text" name="footer_about_title">
+                    <arguments>
+                        <argument name="text" xsi:type="string">ABOUT US</argument>
+                    </arguments>
+                </block>
+            </container>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_about">
+                <arguments>
+                    <argument name="css_class" xsi:type="string" translate="true">footer links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links_cms_about">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="our-story">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Our Story</argument>
+                    <argument name="path" xsi:type="string">story</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="sitemap">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sitemap</argument>
+                    <argument name="path" xsi:type="string">sitemap</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="terms-conditions">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Terms and Conditions</argument>
+                    <argument name="path" xsi:type="string">terms conditions</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <!--        **************************************************************************************-->
+        <referenceContainer name="footer_links_container_information">
+            <container name="footer_links_container_information_title" htmlTag="div" htmlClass="footer-title">
+                <block class="Magento\Framework\View\Element\Text" name="footer_information_title">
+                    <arguments>
+                        <argument name="text" xsi:type="string">USERFUL INFORMATION</argument>
+                    </arguments>
+                </block>
+            </container>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_information">
+                <arguments>
+                    <argument name="css_class" xsi:type="string" translate="true">footer links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links_cms_information">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="size-charts">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Size Charts</argument>
+                    <argument name="path" xsi:type="string">size</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="blog">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">Blog</argument>
+                <argument name="path" xsi:type="string">blog</argument>
+            </arguments>
+        </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="catalog">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">Catalog</argument>
+                <argument name="path" xsi:type="string">catalog</argument>
+            </arguments>
+        </block>
+        </referenceBlock>
+        <!--***********************************************************************************************************-->
+        <referenceContainer name="footer_links_container_popular">
+            <container name="footer_links_container_popular_title" htmlTag="div" htmlClass="footer-title">
+                <block class="Magento\Framework\View\Element\Text" name="footer_popular_title">
+                    <arguments>
+                        <argument name="text" xsi:type="string">POPULAR PRODUCTS</argument>
+                    </arguments>
+                </block>
+            </container>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_popular">
+                <arguments>
+                    <argument name="css_class" xsi:type="string" translate="true">footer links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links_cms_popular">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="aran-sweaters">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Aran Sweaters</argument>
+                    <argument name="path" xsi:type="string">aran-sweaters</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="tree-of-life">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Tree of Life</argument>
+                    <argument name="path" xsi:type="string">tree-of-life</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="celtic-knot-jewelery">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Celtic Knot Jewelery</argument>
+                    <argument name="path" xsi:type="string">celtic-knot-jewelery</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="irish-blessings">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Irish Blessings</argument>
+                    <argument name="path" xsi:type="string">irish-blessings</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="claddagh-rings">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Claddagh Rings</argument>
+                    <argument name="path" xsi:type="string">claddagh-rings</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="mens-claddagh-rings">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Men's Claddagh Rings</argument>
+                    <argument name="path" xsi:type="string">mens-claddagh-rings</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="trinity-knot-rings">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Trinity Knot Rings</argument>
+                    <argument name="path" xsi:type="string">trinity-knot-rings</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+<!--        *********************************************************************************************-->
+
+        <move element="privacy-policy-link" destination="footer_links_cms_about" after="our-story"/>
+        <move element="contact-us-link" destination="footer_links_cms_help" after="order-tracking"/>
+        <referenceBlock name="footer_links" remove="true"/>
+
     </body>
 </page>
