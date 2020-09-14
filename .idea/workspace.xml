@@ -13,7 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4114934-8e14-471b-a84d-5b226d48c656" name="Default Changelist" comment="created body structure">
+    <list default="true" id="e4114934-8e14-471b-a84d-5b226d48c656" name="Default Changelist" comment="Did some customization header block and footer links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates/custom.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates/custom.phtml" afterDir="false" />
@@ -579,19 +579,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/fonts/Roboto" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/css/source" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Customer/templates" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates/account" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/images" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -629,6 +632,18 @@
       <workItem from="1599409880665" duration="4559000" />
       <workItem from="1599460175631" duration="16354000" />
       <workItem from="1599481411336" duration="7480000" />
+      <workItem from="1599490374809" duration="131000" />
+      <workItem from="1599577011890" duration="5187000" />
+      <workItem from="1599663109409" duration="8901000" />
+      <workItem from="1599672813783" duration="2612000" />
+      <workItem from="1599748924422" duration="16166000" />
+      <workItem from="1599843197246" duration="4621000" />
+      <workItem from="1599904328048" duration="16133000" />
+      <workItem from="1599933244894" duration="5626000" />
+      <workItem from="1600014820173" duration="3507000" />
+      <workItem from="1600087693604" duration="4998000" />
+      <workItem from="1600098257884" duration="5492000" />
+      <workItem from="1600105003762" duration="10362000" />
     </task>
     <task id="LOCAL-00001" summary="Delete some img file">
       <created>1598382711990</created>
@@ -644,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599341819363</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Did some customization header block and footer links">
+      <created>1599490474305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599490474305</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,21 +687,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Delete some img file" />
     <MESSAGE value="created body structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="created body structure" />
+    <MESSAGE value="Did some customization header block and footer links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some customization header block and footer links" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599341825672">
+    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600096180005">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2/0.34.1366.734@0.34.1366.734" timestamp="1599341825672" />
+    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1366.734@0.34.1366.734" timestamp="1600096180005" />
+    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599490478484">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2/0.34.1366.734@0.34.1366.734" timestamp="1599490478484" />
     <state x="462" y="313" width="442" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599341859145">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="462" y="313" width="442" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.34.1366.734@0.34.1366.734" timestamp="1599341859145" />
-    <state x="180" y="86" width="1122" height="668" key="find.popup" timestamp="1599487969059">
+    <state x="89" y="87" width="1274" height="668" key="find.popup" timestamp="1600116278041">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="180" y="86" width="1122" height="668" key="find.popup/0.34.1366.734@0.34.1366.734" timestamp="1599487969059" />
+    <state x="89" y="87" width="1274" height="668" key="find.popup/0.34.1366.734@0.34.1366.734" timestamp="1600116278041" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598376294972">
       <screen x="0" y="34" width="1366" height="734" />
     </state>

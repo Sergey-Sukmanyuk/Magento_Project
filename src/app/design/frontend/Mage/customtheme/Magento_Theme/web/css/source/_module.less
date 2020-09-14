@@ -104,9 +104,11 @@
     .header.panel {
         > .header.links {
             .lib-list-inline();
+            display: flex;
+            justify-content: center;
             float: right;
             font-size: 0;
-            margin-left: auto;
+            margin:0 auto;
             margin-right: @indent__base;
 
             > li {
@@ -488,7 +490,7 @@
     }
 
     .navigation ul {
-        padding: 0 8px;
+        padding: 5px 8px;
     }
 
     .page-header {
@@ -600,8 +602,11 @@
         &.panel {
             > .header.links {
                 .lib-list-inline();
-                float: right;
-                margin-left: auto;
+                //float: right;
+                //margin: 0 auto;
+                display: flex;
+                justify-content: center;
+
 
                 > li {
                     margin: 0 0 0 15px;
@@ -704,9 +709,9 @@
         &.content {
             border-top: none;
 
-            .block {
-                float: right;
-            }
+            //.block {
+            //    float: right;
+            //}
 
             ul {
                 padding-right: 50px;
