@@ -7,6 +7,9 @@
 
 
 & when (@media-common = true) {
+    * {
+        box-sizing: border-box;
+    }
     .page-wrapper {
         .nav-sections {
             margin-bottom: 0;
@@ -168,6 +171,31 @@
         text-transform: uppercase;
 
     }
+
+    .navigation {
+        .ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+            .level0.level-top.ui-menu-item {
+                a:hover {
+                    text-decoration: underline;
+                }
+                .ui-menu-item{
+                    text-align: left;
+                    padding: 0 20px;
+                    a:hover {
+                        text-decoration: underline;
+                        background-color: @color-white;
+                    }
+                }
+
+                .title {
+                    font-weight: 700;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
 
     .content_wrapper {
         background: url('@{baseDir}images/bg_baner_1.jpg');

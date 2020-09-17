@@ -14,6 +14,10 @@
             <block name="contacts" template="Magento_Theme::contacts.phtml"/>
             <container name="header_search_cart" label="header_search_cart" htmlTag="div" htmlClass="search_block"/>
         </referenceContainer>
+
+        <referenceBlock name="catalog.topnav">
+            <block name="custom_menu" template="Magento_Theme::irish_store_menu.phtml"/>
+        </referenceBlock>
 <!--**********************************************************************************************************-->
 
         <referenceContainer name="footer">
