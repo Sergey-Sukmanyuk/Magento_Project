@@ -10,6 +10,7 @@
     * {
         box-sizing: border-box;
     }
+
     .page-wrapper {
         .nav-sections {
             margin-bottom: 0;
@@ -162,25 +163,30 @@
                     width: 280px;
                 }
             }
-
         }
     }
 
     .navigation > ul {
+        padding: 8px 8px 0 8px;
         text-align: center;
         text-transform: uppercase;
+        border: 2px solid @color-white;
 
     }
 
     .navigation {
         .ui-menu.ui-widget.ui-widget-content.ui-corner-all {
             .level0.level-top.ui-menu-item {
-                a:hover {
-                    text-decoration: underline;
+                border-bottom: 3px solid @color-white;
+
+                &:hover {
+                    border-bottom: 3px solid #2f2f2f;
                 }
-                .ui-menu-item{
+
+                .ui-menu-item {
                     text-align: left;
-                    padding: 0 20px;
+                    padding: 0 10px;
+
                     a:hover {
                         text-decoration: underline;
                         background-color: @color-white;
@@ -189,13 +195,27 @@
 
                 .title {
                     font-weight: 700;
-                    text-align: center;
-                    text-decoration: underline;
+                    margin-left: 15%;
+                    border-bottom: 1px solid #2f2f2f;
                 }
             }
         }
     }
 
+    .level0.level-top.ui-menu-item.column_2 {
+        div {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        ul {
+            column-count: 2;
+
+            li {
+                width: 200px;
+            }
+        }
+    }
 
     .content_wrapper {
         background: url('@{baseDir}images/bg_baner_1.jpg');
@@ -475,7 +495,6 @@
 
     }
 
-
     .discount {
         background: url('@{baseDir}images/bg_banner_3.jpg');
         height: 300px;
@@ -581,7 +600,6 @@
         }
     }
 
-
     .our_journey {
         background: url('@{baseDir}images/bg_banner_4.jpg');
         background-repeat: no-repeat;
@@ -606,7 +624,6 @@
             text-align: center;
             text-transform: capitalize;
             font-size: 22px;
-            //margin: 10px 0;
             text-shadow: -2px -1px 5px #000;
         }
 
