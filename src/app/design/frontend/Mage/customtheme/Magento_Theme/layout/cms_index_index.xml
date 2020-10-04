@@ -58,14 +58,15 @@
                 </argument>
             </arguments>
         </block>
+            <block name="ourTopPick" template="Magento_Theme::slider_block.phtml" after="shopCategoryCard"/>
 
-            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">
-                        Our_top_pics
-                    </argument>
-                </arguments>
-            </block>
+<!--            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">-->
+<!--                <arguments>-->
+<!--                    <argument name="block_id" xsi:type="string">-->
+<!--                        Our_top_pics-->
+<!--                    </argument>-->
+<!--                </arguments>-->
+<!--            </block>-->
 
             <block name="videoContent" class="Magento\Cms\Block\Block" after="ourTopPick">
             <arguments>

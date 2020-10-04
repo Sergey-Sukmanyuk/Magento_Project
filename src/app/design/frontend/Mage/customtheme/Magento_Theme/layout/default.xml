@@ -1,14 +1,27 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
     <body>
         <referenceContainer name="header.panel">
             <block name="welcome" template="Magento_Theme::greeting.phtml" before="-"/>
         </referenceContainer>
         <referenceContainer name="header-wrapper">
-            <container name="header_contact_search" label="header_contact_search" htmlTag="div" htmlClass="contact_search_block" after="logo"/>
+            <container name="header_contact_search" label="header_contact_search" htmlTag="div"
+                       htmlClass="contact_search_block" after="logo"/>
             <block name="after_logo" template="Magento_Theme::custom.phtml" after="logo"/>
         </referenceContainer>
+
+<!--        <referenceContainer name="header-wrapper">-->
+<!--            <container name="return_link_wrapper" label="return_link_wrapper" htmlTag="div" htmlClass="info_link_text">-->
+<!--                <block class="Magento\Framework\View\Element\Html\Link\Current" name="return-link">-->
+<!--                    <arguments>-->
+<!--                        <argument name="label" xsi:type="string" translate="true">Extended 180 Day Free Returns</argument>-->
+<!--                        <argument name="path" xsi:type="string">return-info</argument>-->
+<!--                    </arguments>-->
+<!--                </block>-->
+<!--            </container>-->
+<!--        </referenceContainer>-->
 
         <referenceContainer name="header_contact_search">
             <block name="contacts" template="Magento_Theme::contacts.phtml"/>
@@ -18,13 +31,17 @@
         <referenceBlock name="catalog.topnav">
             <block name="custom_menu" template="Magento_Theme::irish_store_menu.phtml"/>
         </referenceBlock>
-<!--**********************************************************************************************************-->
+        <!--**********************************************************************************************************-->
 
         <referenceContainer name="footer">
-            <container name="footer_links_container_help" label="footer_links_container_help" htmlTag="div" htmlClass="links" before="cms_footer_links_container"/>
-            <container name="footer_links_container_about" label="footer_links_container_about" htmlTag="div" htmlClass="links" after="footer_links_container_help"/>
-            <container name="footer_links_container_information" label="footer_links_container_information" htmlTag="div" htmlClass="links" after="footer_links_container_about"/>
-            <container name="footer_links_container_popular" label="footer_links_container_popular" htmlTag="div" htmlClass="links" after="footer_links_container_information"/>
+            <container name="footer_links_container_help" label="footer_links_container_help" htmlTag="div"
+                       htmlClass="links" before="cms_footer_links_container"/>
+            <container name="footer_links_container_about" label="footer_links_container_about" htmlTag="div"
+                       htmlClass="links" after="footer_links_container_help"/>
+            <container name="footer_links_container_information" label="footer_links_container_information"
+                       htmlTag="div" htmlClass="links" after="footer_links_container_about"/>
+            <container name="footer_links_container_popular" label="footer_links_container_popular" htmlTag="div"
+                       htmlClass="links" after="footer_links_container_information"/>
             <block name="footer_social" template="Magento_Theme::social.phtml" after="trinity-knot-rings"/>
             <block name="footer_location_block" template="Magento_Theme::location.phtml" after="footer_social"/>
         </referenceContainer>
@@ -38,7 +55,7 @@
                     </arguments>
                 </block>
             </container>
-             <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_help">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_cms_help">
                 <arguments>
                     <argument name="css_class" xsi:type="string">footer links</argument>
                 </arguments>
@@ -144,17 +161,17 @@
                 </arguments>
             </block>
             <block class="Magento\Framework\View\Element\Html\Link\Current" name="blog">
-            <arguments>
-                <argument name="label" xsi:type="string" translate="true">Blog</argument>
-                <argument name="path" xsi:type="string">blog</argument>
-            </arguments>
-        </block>
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Blog</argument>
+                    <argument name="path" xsi:type="string">blog</argument>
+                </arguments>
+            </block>
             <block class="Magento\Framework\View\Element\Html\Link\Current" name="catalog">
-            <arguments>
-                <argument name="label" xsi:type="string" translate="true">Catalog</argument>
-                <argument name="path" xsi:type="string">catalog</argument>
-            </arguments>
-        </block>
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Catalog</argument>
+                    <argument name="path" xsi:type="string">catalog</argument>
+                </arguments>
+            </block>
         </referenceBlock>
         <!--***********************************************************************************************************-->
         <referenceContainer name="footer_links_container_popular">
@@ -216,22 +233,20 @@
                 </arguments>
             </block>
         </referenceBlock>
-<!--        *********************************************************************************************-->
+        <!--        *********************************************************************************************-->
 
 
-<!--        **************************************************************************************************-->
+        <!--        **************************************************************************************************-->
 
         <move element="privacy-policy-link" destination="footer_links_cms_about" after="our-story"/>
         <move element="contact-us-link" destination="footer_links_cms_help" after="order-tracking"/>
         <move element="minicart" destination="header_search_cart"/>
         <move element="top.search" destination="header_search_cart" before="minicart"/>
-
+        <move element="return-link" destination="after_logo"/>
 
 
         <referenceBlock name="footer_links" remove="true"/>
         <referenceBlock name="register-link" remove="true"/>
-
-
 
 
     </body>

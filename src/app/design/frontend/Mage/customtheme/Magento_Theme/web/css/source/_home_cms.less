@@ -170,8 +170,6 @@
         padding: 8px 8px 0 8px;
         text-align: center;
         text-transform: uppercase;
-        border: 2px solid @color-white;
-
     }
 
     .navigation {
@@ -425,6 +423,41 @@
 
         &::after {
             margin-right: -100%;
+        }
+    }
+
+    .slider {
+        .slick-arrow {
+            &.slick-prev {
+                left: 0;
+                background:  url('@{baseDir}images/l-arrow.svg');
+                background-repeat: no-repeat;
+
+                &:hover {
+                    border: none;
+                }
+
+                &:before {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    .slider {
+        .slick-arrow {
+            &.slick-next {
+                right: 0;
+                background:  url('@{baseDir}images/r-arrow.svg');
+                background-repeat: no-repeat;
+
+                &:hover {
+                    border:none;
+                }
+                &:before {
+                    content: "";
+                }
+            }
         }
     }
 
