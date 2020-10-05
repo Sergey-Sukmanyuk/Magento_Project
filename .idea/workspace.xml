@@ -13,11 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4114934-8e14-471b-a84d-5b226d48c656" name="Default Changelist" comment="Finished customize navigation">
+    <list default="true" id="e4114934-8e14-471b-a84d-5b226d48c656" name="Default Changelist" comment="Was added slick slider.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/cms_index_index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/cms_index_index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/layout/default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source/_extend.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source/_home_cms.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source/_home_cms.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -579,24 +577,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/css/source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/js" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/css/source" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/js" />
+      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/css/source" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/js" />
       <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/css/source" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/web/css/source" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/web/js" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme" />
-      <recent name="$PROJECT_DIR$/src/app/design/frontend/Mage/customtheme/Magento_Theme/templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -671,7 +669,8 @@
       <workItem from="1601713254142" duration="9416000" />
       <workItem from="1601733702275" duration="8196000" />
       <workItem from="1601796917367" duration="8018000" />
-      <workItem from="1601806214909" duration="2643000" />
+      <workItem from="1601806214909" duration="14631000" />
+      <workItem from="1601834590227" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Delete some img file">
       <created>1598382711990</created>
@@ -715,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600538473369</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Was added slick slider.">
+      <created>1601809250006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601809250006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,21 +746,22 @@
     <MESSAGE value="Finished customize header and footer blocks. Add Roboto font." />
     <MESSAGE value="Create custom top navigation" />
     <MESSAGE value="Finished customize navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished customize navigation" />
+    <MESSAGE value="Was added slick slider." />
+    <option name="LAST_COMMIT_MESSAGE" value="Was added slick slider." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601798623451">
+    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601821318647">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1366.734@0.34.1366.734" timestamp="1601798623451" />
+    <state x="416" y="148" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1366.734@0.34.1366.734" timestamp="1601821318647" />
     <state x="466" y="159" width="424" height="490" key="FileChooserDialogImpl" timestamp="1600970324097">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="466" y="159" width="424" height="490" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1600970324097" />
-    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600538492189">
+    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601809260303">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2/0.34.1366.734@0.34.1366.734" timestamp="1600538492189" />
+    <state x="278" y="136" width="800" height="535" key="Vcs.Push.Dialog.v2/0.34.1366.734@0.34.1366.734" timestamp="1601809260303" />
     <state x="462" y="313" width="442" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599341859145">
       <screen x="0" y="34" width="1366" height="734" />
     </state>

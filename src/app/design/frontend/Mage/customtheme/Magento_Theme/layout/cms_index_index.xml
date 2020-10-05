@@ -20,12 +20,12 @@
             </block>
 
             <block name="bestValues" class="Magento\Cms\Block\Block" after="underLine">
-            <arguments>
-                <argument name="block_id" xsi:type="string">
-                    Best_values
-                </argument>
-            </arguments>
-        </block>
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Best_values
+                    </argument>
+                </arguments>
+            </block>
 
             <block name="shopCategories" class="Magento\Cms\Block\Block" after="bestValues">
                 <arguments>
@@ -52,29 +52,29 @@
             </block>
 
             <block name="shopCategoryCard" class="Magento\Cms\Block\Block" after="exclusiveBlock">
-            <arguments>
-                <argument name="block_id" xsi:type="string">
-                    Shop_categories_cards
-                </argument>
-            </arguments>
-        </block>
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Shop_categories_cards
+                    </argument>
+                </arguments>
+            </block>
             <block name="ourTopPick" template="Magento_Theme::slider_block.phtml" after="shopCategoryCard"/>
 
-<!--            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">-->
-<!--                <arguments>-->
-<!--                    <argument name="block_id" xsi:type="string">-->
-<!--                        Our_top_pics-->
-<!--                    </argument>-->
-<!--                </arguments>-->
-<!--            </block>-->
+            <!--            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">-->
+            <!--                <arguments>-->
+            <!--                    <argument name="block_id" xsi:type="string">-->
+            <!--                        Our_top_pics-->
+            <!--                    </argument>-->
+            <!--                </arguments>-->
+            <!--            </block>-->
 
             <block name="videoContent" class="Magento\Cms\Block\Block" after="ourTopPick">
-            <arguments>
-                <argument name="block_id" xsi:type="string">
-                    Video_content
-                </argument>
-            </arguments>
-        </block>
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Video_content
+                    </argument>
+                </arguments>
+            </block>
 
             <block name="discount" class="Magento\Cms\Block\Block" after="videoContent">
                 <arguments>
