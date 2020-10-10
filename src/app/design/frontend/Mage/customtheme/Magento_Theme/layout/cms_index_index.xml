@@ -60,6 +60,13 @@
             </block>
             <block name="ourTopPick" template="Magento_Theme::slider_block.phtml" after="shopCategoryCard"/>
 
+<!--            <block name="modalWindow" template="Magento_Theme::modal_window.phtml"/>-->
+
+            <block name="accordion" template="Magento_Theme::acordion.phtml"/>
+
+            <block name="tabs" template="Magento_Theme::tabs.phtml"/>
+
+
             <!--            <block name="ourTopPick" class="Magento\Cms\Block\Block" after="shopCategoryCard">-->
             <!--                <arguments>-->
             <!--                    <argument name="block_id" xsi:type="string">-->

@@ -5,6 +5,7 @@
     <body>
         <referenceContainer name="header.panel">
             <block name="welcome" template="Magento_Theme::greeting.phtml" before="-"/>
+
         </referenceContainer>
         <referenceContainer name="header-wrapper">
             <container name="header_contact_search" label="header_contact_search" htmlTag="div"
