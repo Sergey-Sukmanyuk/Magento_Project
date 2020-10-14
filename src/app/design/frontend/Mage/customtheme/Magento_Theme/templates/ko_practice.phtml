@@ -1,0 +1,19 @@
+<div class="wrapperKo" data-bind="scope: 'koPractice'">
+    <input type="text" data-bind="textInput: fromKo, hasFocus: isSelected">
+    <input type="text" data-bind="value: fromKo">
+
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "koPractice": {
+                        "component": "koJS"
+                    }
+                }
+            }
+        }
+    }
+</script>
