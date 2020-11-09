@@ -14,6 +14,7 @@
 
         <referenceContainer name="content">
             <block name="value.info.block" template="Magento_Catalog::WhyWeLoveIt.phtml" before="catalog.product.related"/>
+            <block name="rating.info.block" template="Magento_Catalog::rating.phtml" before="reviews.tab"/>
         </referenceContainer>
 
 
@@ -41,7 +42,7 @@
 
         <move element="product.info.overview" destination="product.info.main" after="sale.info.block"/>
         <move element="reviews.tab" destination="content" after="-"/>
-        <move element="catalog.product.related" destination="content" before="reviews.tab"/>
+        <move element="catalog.product.related" destination="content" before="rating.info.block"/>
         <move element="product.info.type" destination="product.info.sku.review" before="-"/>
         <move element="product.info.stock.sku" destination="product.info.sku.review" before="-"/>
         <move element="product.info.review" destination="product.info.sku.review" after="-"/>
