@@ -3,7 +3,7 @@
 <div class="rating_product_block">
     <div class="rating_product_title"> Our Customers Rate Product</div>
     <div class="rating_product_stars">
-        <?= $block->getReviewsSummaryHtml($block->getProductData()) ?>
+        <?= $block->getReviewsSummaryHtml($block->getProduct(), false, true) ?>
     </div>
     <div class="rating_feefo">
         <img src="<?= $block->getViewFileUrl("images/feefo_g.png"); ?>" alt="globe">
