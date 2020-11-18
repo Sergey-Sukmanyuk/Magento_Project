@@ -4,13 +4,11 @@
 
     <body>
         <referenceContainer name="product.info.main">
+            <container name="product.info.sku.review" label="Product info sku and review" htmlTag="div" htmlClass="product-info-sku-review" before ="product.info.price"/>
             <block name="sale.info.block" template="Magento_Catalog::block.phtml" after="product.info.price"/>
             <block name="size.chart.block" template="Magento_Catalog::size.phtml" after="-"/>
         </referenceContainer>
 
-        <referenceContainer name ="product.info.main">
-            <container name="product.info.sku.review" label="Product info sku and review" htmlTag="div" htmlClass="product-info-sku-review" before ="product.info.price"/>
-        </referenceContainer>
 
         <referenceContainer name="content">
             <block name="value.info.block" template="Magento_Catalog::WhyWeLoveIt.phtml" before="catalog.product.related"/>
@@ -47,6 +45,18 @@
         <move element="product.info.type" destination="product.info.sku.review" before="-"/>
         <move element="product.info.stock.sku" destination="product.info.sku.review" before="-"/>
         <move element="product.info.review" destination="product.info.sku.review" after="-"/>
+
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="upsell.product.addto.compare" remove="true"/>
+        <referenceBlock name="related.product.addto.compare" remove="true"/>
+
+        <referenceBlock name="product.review.form" remove="true"/>
+        <referenceBlock name="add.review.link" remove="true"/>
+
+
+        <referenceBlock name="wishlist_sidebar" remove="true"/>
 
 
     </body>
