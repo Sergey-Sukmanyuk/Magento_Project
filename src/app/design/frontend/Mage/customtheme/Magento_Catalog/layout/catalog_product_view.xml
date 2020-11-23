@@ -11,9 +11,16 @@
 
 
         <referenceContainer name="content">
-            <block name="value.info.block" template="Magento_Catalog::WhyWeLoveIt.phtml" before="catalog.product.related"/>
+            <block name="Worth_value" class="Magento\Cms\Block\Block" before="catalog.product.related">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        Worth_value
+                    </argument>
+                </arguments>
+            </block>
             <block name="rating.info.block"  template="Magento_Catalog::rating.phtml" before="reviews.tab"/>
         </referenceContainer>
+
 
 
         <referenceBlock name="product.info.details">
@@ -25,8 +32,8 @@
         </referenceBlock>
 
         <referenceContainer name="product.info.type">
-            <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.sku" template="Magento_Catalog::product/view/attribute.phtml" after="product.info.type">
-                <arguments>
+           <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.sku" template="Magento_Catalog::product/view/attribute.phtml" after="product.info.type">    
+                 <arguments>
                     <argument name="at_call" xsi:type="string">getSku</argument>
                     <argument name="at_code" xsi:type="string">sku</argument>
                     <argument name="css_class" xsi:type="string">sku</argument>
@@ -34,6 +41,9 @@
                     <argument name="add_attribute" xsi:type="string">itemprop="sku"</argument>
                 </arguments>
             </block>
+        
+            
+               
         </referenceContainer>
 
 

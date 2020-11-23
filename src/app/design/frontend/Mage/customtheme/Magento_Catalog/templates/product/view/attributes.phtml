@@ -1,6 +1,28 @@
-<div class="shipping_return">
-    <p class = "shipping_return_item">Available for immediate dispatch.</p>
-    <p class = "shipping_return_item">Standard shipping worldwide from $10.95.</p>
-    <p class = "shipping_return_item">Free returns within 6 months.</p>
-    <p class = "shipping_return_item">For complete details, read our <span>Shipping</span> and <span>Return</span> policies.</p>
-</div>
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+?>
+<?php
+    $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+    $_product = $block->getProduct();
+?>
+<?php if ($_additional = $block->getAdditionalData()) :?>
+    <div class="additional-attributes-wrapper table-wrapper">
+        <div class="shipping_return">
+            <p class = "shipping_return_item"><?= $block->escapeHtml(__('Available for immediate dispatch.')) ?></p>
+            <p class = "shipping_return_item"><?= $block->escapeHtml(__('Standard shipping worldwide from $10.95.')) ?></p>
+            <p class = "shipping_return_item"> <?= $block->escapeHtml(__('Free returns within 6 months.')) ?></p>
+            <p class = "shipping_return_item"><?= $block->escapeHtml(__('For complete details, read our')) ?> <a href="#" class ="additional_link"><span><?= $block->escapeHtml(__('Shipping'))?></span></a> and <a href="#" class ="additional_link"><span><?= $block->escapeHtml(__('Return '))?></span></a><?= $block->escapeHtml(__('policies')) ?></p>
+        </div>
+    </div>
+<?php endif;?>
